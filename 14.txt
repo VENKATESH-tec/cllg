@@ -1,0 +1,16 @@
+select * from orders where CUSTOMER_ID=11;
+select ORD_NO FROM orders where ORD_NO=1 AND ORD_DATA=12;
+ SELECT  * FROM custom where city like 'T%';
+ SELECT ORD_NO from orders UNION SELECT cust_name from custom;
+select cust_name,city from custom where exists(select ORD_NO,ORD_DATA FROM orders where orders.SALESMAN_ID=custom.SALESMAN
+
+ select ORD_NO FROM orders inner join custom on orders. SALESMAN_ID=custom. SALESMAN_ID;
+
+ create view venky as select city,grade from custom;
+ select * from suj;
+create or replace view suj as select cust_name,grade from custom;
+select * from suj;
+drop view suj;
+ select * from orders full join custom;
+
+SELECT ORD_NO from orders INTERSECT SELECT cust_name from custom;
